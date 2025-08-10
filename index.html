@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MD. NAHIDUZZAMAN — Software Developer</title>
+  <meta name="description" content="MD. NAHIDUZZAMAN — Software Developer, CTO at Okobiz. Expertise: Web & Mobile App Development, Frontend, Backend, DevOps." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f1724; --card:#0b1220; --accent:#06b6d4; --muted:#9aa4b2; --white:#ffffff;
+      --max-w:900px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans",sans-serif;
+      background:linear-gradient(180deg,#071022 0%, #071826 100%); color:var(--white);
+      -webkit-font-smoothing:antialiased;
+    }
+    .container{max-width:var(--max-w); margin:28px auto; padding:20px;}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); border:1px solid rgba(255,255,255,0.04); padding:24px; border-radius:12px; box-shadow: 0 6px 20px rgba(2,6,23,0.6);}
+    .hero{display:flex; gap:20px; align-items:center; flex-wrap:wrap}
+    .avatar{
+      width:120px; height:120px; border-radius:12px; background:linear-gradient(135deg,#0ea5a4,#06b6d4); display:flex; align-items:center; justify-content:center; font-weight:700; font-size:28px; color:#042047;
+      flex:0 0 120px;
+    }
+    h1{margin:0; font-size:22px}
+    p.lead{color:var(--muted); margin:8px 0 14px}
+    .buttons{display:flex; gap:10px; flex-wrap:wrap}
+    .btn{padding:10px 14px; border-radius:8px; text-decoration:none; display:inline-block; font-weight:600}
+    .btn-primary{background:var(--accent); color:#042027}
+    .btn-light{background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.04); color:var(--white)}
+    .section{margin-top:20px}
+    .grid{display:grid; grid-template-columns:1fr 1fr; gap:16px}
+    .skills{display:flex; gap:8px; flex-wrap:wrap}
+    .skill{background:rgba(255,255,255,0.03); padding:6px 10px; border-radius:8px; font-size:13px}
+    .project{background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.02)); padding:12px; border-radius:10px; border:1px solid rgba(255,255,255,0.03)}
+    .contact-list{list-style:none; padding:0; margin:0; display:flex; gap:12px; flex-wrap:wrap}
+    .contact-list li{background:rgba(255,255,255,0.03); padding:8px 10px; border-radius:8px; font-size:14px}
+    footer{margin-top:20px; color:var(--muted); font-size:13px; text-align:center}
+
+    /* responsive */
+    @media(max-width:720px){
+      .grid{grid-template-columns:1fr}
+      .hero{gap:12px}
+      .avatar{width:96px; height:96px; font-size:22px}
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <div class="card">
+      <div class="hero">
+        <div class="avatar">MN</div>
+        <div style="flex:1; min-width:0;">
+          <h1>MD. NAHIDUZZAMAN</h1>
+          <p class="lead">CTO &amp; Software Developer — Web, Mobile &amp; Cloud | Frontend • Backend • DevOps</p>
+          <div class="buttons">
+            <a class="btn btn-primary" href="#projects">View Projects</a>
+            <a class="btn btn-light" href="#contact">Contact Me</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- About -->
+      <section id="about" class="section">
+        <h2 style="margin:0 0 8px">About Me</h2>
+        <p style="margin:0; color:var(--muted)">
+          I am MD. NAHIDUZZAMAN — a versatile Software Engineer and technology leader. I have experience in Web and Mobile Application Development, UI/UX rendering, API design, and deployment automation.  
+          Currently, I’m the CTO at Okobiz, working on technology strategy and product development.
+        </p>
+      </section>
+
+      <!-- Skills & Experience -->
+      <section class="section grid" style="align-items:start">
+        <div>
+          <h3 style="margin:0 0 8px">Skills</h3>
+          <div class="skills">
+            <span class="skill">HTML / CSS / JavaScript</span>
+            <span class="skill">React / Next.js</span>
+            <span class="skill">Node.js / Express</span>
+            <span class="skill">Django / Flask</span>
+            <span class="skill">Flutter / React Native</span>
+            <span class="skill">Docker / GitHub Actions</span>
+            <span class="skill">Postgres / MongoDB</span>
+            <span class="skill">AWS / DigitalOcean</span>
+          </div>
+
+          <h3 style="margin:16px 0 8px">Experience</h3>
+          <ul style="color:var(--muted); margin:0 0 0 18px;">
+            <li>Web Application Development — 5+ Years</li>
+            <li>Team Leadership & Project Management</li>
+            <li>Production Deployment & CI/CD Setup</li>
+          </ul>
+        </div>
+
+        <!-- Projects -->
+        <div>
+          <h3 style="margin:0 0 8px">Project Gallery</h3>
+
+          <div class="project" style="margin-bottom:10px;">
+            <strong>Okobiz E-commerce Platform</strong>
+            <p style="margin:6px 0 0; color:var(--muted); font-size:14px">
+              A complete e-commerce solution with product management, order processing, payment integration, and analytics.
+            </p>
+          </div>
+
+          <div class="project" style="margin-bottom:10px;">
+            <strong>Learning Portal</strong>
+            <p style="margin:6px 0 0; color:var(--muted); font-size:14px">
+              An online course management system with video lectures, quizzes, and certificate generation features.
+            </p>
+          </div>
+
+          <div class="project">
+            <strong>Mobile Delivery App</strong>
+            <p style="margin:6px 0 0; color:var(--muted); font-size:14px">
+              A mobile order-delivery app with real-time tracking and route optimization.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- More details -->
+      <section id="projects" class="section">
+        <h3 style="margin:0 0 8px">How I Work</h3>
+        <p style="margin:0; color:var(--muted)">
+          When starting a project, I first understand the product requirements, then design an MVP for quick delivery. I focus on testing and continuous integration to build stable and scalable systems.
+        </p>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="section">
+        <h3 style="margin:0 0 8px">Contact</h3>
+        <ul class="contact-list" style="margin-top:8px;">
+          <li>📧 Email: <strong>nahiduzzaman0@gmail.com</strong></li>
+          <li>📞 Phone/WhatsApp: <strong>+8801676030301</strong></li>
+          <li>🔗 YouTube: <strong><a href="https://youtube.com/@tech_360_bd" style="color:var(--accent); text-decoration:none">@tech_360_bd</a></strong></li>
+          <li>🎥 YouTube: <strong><a href="https://youtube.com/@GolperZhuri" style="color:var(--accent); text-decoration:none">@GolperZhuri</a></strong></li>
+        </ul>
+        <p style="margin-top:10px; color:var(--muted); font-size:14px;">
+          🎯 Please support my work by subscribing to both channels above!
+        </p>
+      </section>
+
+      <footer>
+        © <span id="year"></span> MD. NAHIDUZZAMAN — Software Developer • Built with ❤️
+      </footer>
+    </div>
+  </main>
+
+  <script>
+    // Auto year update
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
